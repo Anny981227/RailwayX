@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # configs
-AUUID=24b4b1e1-7a89-45f6-858c-242cf53b5bdb
+AUUID=8fa37c64-d321-4e65-88f8-6fd7e5c39ed1
 CADDYIndexPage=https://github.com/AYJCSGM/mikutap/archive/master.zip
 CONFIGCADDY=https://raw.githubusercontent.com/Lbingyi/HerokuXray/master/etc/Caddyfile
 CONFIGXRAY=https://raw.githubusercontent.com/Lbingyi/HerokuXray/master/etc/xray.json
@@ -22,7 +22,7 @@ for file in $(ls /usr/share/caddy/$AUUID); do
 done
 
 # start
-tor &
+# tor &
 
 /xray -config /xray.json &
 
